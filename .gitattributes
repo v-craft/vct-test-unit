@@ -1,0 +1,11 @@
+/.github export-ignore
+/docs export-ignore
+/test export-ignore
+/examples export-ignore
+/CMakePresets.json export-ignore
+
+/README.md export-ignore
+/Doxyfile export-ignore
+.gitignore export-ignore
+.gitattributes export-ignore
+
