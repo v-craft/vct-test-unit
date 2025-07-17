@@ -44,7 +44,19 @@ If you have many test cases that need to be split across multiple files, ensure 
 Example:
 
 ```cmake
+# install package to `build/_deps/`
+include(FetchContent)
+
+FetchContent_Declare(
+    vct-test-unit
+    URL      https://github.com/v-craft/vct-test-unit/archive/refs/tags/v1.0.0.tar.gz
+)
+FetchContent_MakeAvailable(vct-test-unit)
+
+
 add_executable(myTest main.cpp)
+
+# link lib
 target_link_libraries(myTest PRIVATE vct::test-unit)
 ```
 
