@@ -54,8 +54,8 @@
  * @brief Explicitly mark test as failed
  * @details Immediately throws AssertException, terminating current test function execution
  */
-#define M_ASSERT_FAIL() \
-    throw vct::test::unit::AssertException("Explicit failure")
+#define M_ASSERT_FAIL( msg ) \
+    throw vct::test::unit::AssertException( "Assert fail, msg:" #msg )
 
 /**
  * @brief Explicitly mark test as successful and immediately end current test function
@@ -68,8 +68,8 @@
  * @brief Add a failure record but continue execution
  * @details Throws ExpectException, recording failure but not terminating test function
  */
-#define M_EXPECT_FAIL() \
-    throw vct::test::unit::ExpectException("Explicit expectation failure")
+#define M_EXPECT_FAIL( msg ) \
+    throw vct::test::unit::ExpectException( "Expect fail, msg: " #msg )
 
 
 
