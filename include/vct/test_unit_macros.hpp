@@ -16,8 +16,8 @@
 
 #pragma once
 
-#ifndef VCT_TEST_UNIT_MACROS_HPP
-#define VCT_TEST_UNIT_MACROS_HPP
+#ifndef _M_VCT_TEST_UNIT_MACROS_HPP
+#define _M_VCT_TEST_UNIT_MACROS_HPP
 
 
 //////////////////////////////////////////////////////////////////////////
@@ -808,4 +808,4 @@
 
 //////////////////////////////////////////////////////////////////////////
 
-#endif // VCT_TEST_UNIT_MACROS_HPP
+#endif // _M_VCT_TEST_UNIT_MACROS_HPP
